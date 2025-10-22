@@ -1,0 +1,6 @@
+com\agm\classificados\service\AnuncioService.class
+com\agm\classificados\controller\AnuncioController.class
+com\agm\classificados\repository\AnuncioRepository.class
+com\agm\classificados\model\Anuncio.class
+com\agm\classificados\AgmClassificadosApplication.class
+com\agm\classificados\controller\PageController.class

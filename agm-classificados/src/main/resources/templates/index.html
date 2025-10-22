@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGMSOFTWARE - Página Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" th:href="@{/}">AGMSOFTWARE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" th:href="@{/carros}">Carros</a></li>
+          <li class="nav-item"><a class="nav-link" th:href="@{/imoveis}">Imóveis</a></li>
+          <li class="nav-item"><a class="nav-link" th:href="@{/negocios}">Negócios</a></li>
+          <li class="nav-item"><a class="nav-link" th:href="@{/empregos}">Empregos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Bem-vindo ao AGM Classificados</h1>
+      <p class="lead">Anuncie e encontre oportunidades de Carros, Imóveis, Negócios e Empregos.</p>
+      <a th:href="@{/carros}" class="btn btn-light btn-lg mt-3">Começar Agora</a>
+    </div>
+  </header>
+
+  <!-- Seções -->
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Carros</h5>
+            <p class="card-text">Compre, venda ou alugue carros facilmente.</p>
+            <a th:href="@{/carros}" class="btn btn-primary">Ver anúncios</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-success">Imóveis</h5>
+            <p class="card-text">As melhores opções de compra e aluguel.</p>
+            <a th:href="@{/imoveis}" class="btn btn-success">Ver anúncios</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Negócios</h5>
+            <p class="card-text">Invista em novas oportunidades de negócios.</p>
+            <a th:href="@{/negocios}" class="btn btn-warning text-white">Ver anúncios</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Empregos</h5>
+            <p class="card-text">Encontre vagas ou divulgue oportunidades.</p>
+            <a th:href="@{/empregos}" class="btn btn-danger">Ver anúncios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 AGM Classificados - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

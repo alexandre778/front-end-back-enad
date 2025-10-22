@@ -1,0 +1,141 @@
+/* ==============================
+   Reset e Base
+============================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* fundo claro uniforme */
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ==============================
+   Navbar
+============================== */
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* ==============================
+   Cards
+============================== */
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card Titles e Textos */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.card p.fw-bold {
+    font-size: 1rem;
+    color: #000;
+}
+
+/* ==============================
+   Botões
+============================== */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* ==============================
+   Modais
+============================== */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+/* ==============================
+   Cards Grid
+============================== */
+.row.g-4 {
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+/* ==============================
+   Responsividade
+============================== */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
